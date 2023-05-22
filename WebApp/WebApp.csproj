@@ -20,6 +20,7 @@
     <Folder Include="Models\Identities\" />
     <Folder Include="Models\Dtos\" />
     <Folder Include="Models\ViewModels\" />
+    <Folder Include="Views\Partials\" />
   </ItemGroup>
 
   <ItemGroup>
