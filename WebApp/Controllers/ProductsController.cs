@@ -4,13 +4,11 @@ namespace WebApp.Controllers
 {
     public class ProductsController : Controller
     {
-        [Route("products/")]
         public IActionResult Index()
         {
             return View();
         }
-        [Route("products/{id}")]
-        public IActionResult Detail(string id)
+        public IActionResult Details(string id)
         {
             return View();
         }
