@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApp.Models.ViewModels;
 
 namespace WebApp.Controllers
 {
@@ -17,7 +18,7 @@ namespace WebApp.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Register()
+        public IActionResult Register(AccountRegisterViewModel viewModel)
         {
             return View();
         }
@@ -29,7 +30,7 @@ namespace WebApp.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Login()
+        public IActionResult Login(AccountLoginViewModel viewModel)
         {
             return View();
         }
