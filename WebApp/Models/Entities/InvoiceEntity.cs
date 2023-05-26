@@ -1,4 +1,4 @@
-﻿namespace WebApp.Models.Enteties
+﻿namespace WebApp.Models.Entities
 {
     public class InvoiceEntity
     {
