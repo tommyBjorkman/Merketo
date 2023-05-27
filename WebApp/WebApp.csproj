@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -17,8 +17,9 @@
   <ItemGroup>
     <Folder Include="Models\Identities\" />
     <Folder Include="Models\Dtos\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\Repositories\" />
+    <Folder Include="Helpers\Services\" />
     <Folder Include="Views\Partials\" />
   </ItemGroup>
 

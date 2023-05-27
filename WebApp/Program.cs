@@ -4,7 +4,7 @@ using WebApp.Models.Contexts;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<IdentityContext>(optionsBuilder => optionsBuilder.UseSqlServer(""));
+builder.Services.AddDbContext<IdentityContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("Identity")));
 
 
 var app = builder.Build();
