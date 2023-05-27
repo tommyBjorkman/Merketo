@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using WebApp.Models.Identities;
 
 namespace WebApp.Models.Entities
 {
@@ -11,6 +12,6 @@ namespace WebApp.Models.Entities
 
         [Column(TypeName = "money")]
         public decimal TotalAmount { get; set; }
-        public AccountEntity User { get; set; } = null!;
+        public AppUser User { get; set; } = null!;
     }
 }

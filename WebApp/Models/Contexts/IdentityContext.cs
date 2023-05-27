@@ -1,16 +1,16 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using WebApp.Models.Entities;
+using WebApp.Models.Identities;
 
 namespace WebApp.Models.Contexts
 {
-    public class IdentityContext : IdentityDbContext
+    public class IdentityContext : IdentityDbContext<AppUser>
     {
         public IdentityContext(DbContextOptions<IdentityContext> options) : base(options)
         {
         }
 
-        public DbSet<AccountEntity> Accounts { get; set; }
         public DbSet<AccountAddressEntity> AccountAddresses { get; set; }
         public DbSet<AddressEntity> Addresses { get; set; }
         public DbSet<InvoiceEntity> Invoices { get; set; }
