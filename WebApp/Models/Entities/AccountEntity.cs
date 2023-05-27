@@ -11,6 +11,8 @@ namespace WebApp.Models.Entities
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
         public string? PhoneNumber { get; set; }
+        public string? CompanyName { get; set; }
+        public string? ProfileImage { get; set; }
         public IdentityUser User { get; set; } = null!;
         public ICollection<AccountAddressEntity> Addresses { get; set; } = new HashSet<AccountAddressEntity>();
         public ICollection<OrderEntity> Orders { get; set; } = new HashSet<OrderEntity>();
