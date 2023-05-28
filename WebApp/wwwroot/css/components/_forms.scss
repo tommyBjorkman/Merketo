@@ -1,9 +1,24 @@
 #account-registration {
 	display: grid;
 	grid-template-columns: 1fr;
+	gap: 2rem;
 
 	@media(min-width: 1200px) {
-		grid-template-columns: 2fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:	"firstName lastName"
+								"streetName streetName";
+	}
+
+	#FirstName {
+		grid-area: firstName;
+	}
+
+	#LastName {
+		grid-area: lastName;
+	}
+
+	#StreetName {
+		grid-area: streetName;
 	}
 }
 input {
