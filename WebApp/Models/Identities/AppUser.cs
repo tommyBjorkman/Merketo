@@ -4,7 +4,7 @@ using WebApp.Models.Interfaces;
 
 namespace WebApp.Models.Identities
 {
-    public class AppUser : IdentityUser, IAccountInformation, ICompanyInformation
+    public class AppUser : IdentityUser, IAccountInformation, ICompanyInformation, IProfileImage
     {
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
