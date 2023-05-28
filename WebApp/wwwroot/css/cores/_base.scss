@@ -4,3 +4,13 @@ $font-roboto: 'Roboto', sans-serif;
 html, body {
     font-family: 'Poppins', sans-serif;
 }
+.wrapper {
+    height: 100vh;
+    background: gray;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

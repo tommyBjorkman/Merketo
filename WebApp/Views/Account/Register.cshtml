@@ -2,9 +2,25 @@
 @{
     ViewData["Title"] = "Register new account";
 }
-
-<div>
-    <label asp-for="FirstName"></label>
-    <input asp-for="FirstName" />
-    <span asp-validation-for="FirstName"></span>
-</div>
+<section class="wrapper">
+    <header>
+    </header>
+    <div class="center-content">
+        <div class="container">
+            <form id="account-registration">
+                <div>
+                    <label asp-for="FirstName" class="form-label"></label>
+                    <input asp-for="FirstName" />
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+                <div>
+                    <label asp-for="LastName" class="form-label"></label>
+                    <input asp-for="LastName" />
+                    <span asp-validation-for="LastName"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</section>

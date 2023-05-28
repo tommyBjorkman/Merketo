@@ -1,0 +1,12 @@
+#account-registration {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media(min-width: 1200px) {
+		grid-template-columns: 2fr;
+	}
+}
+input {
+	display: block;
+	width: 100%;
+}
