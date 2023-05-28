@@ -12,7 +12,7 @@ namespace WebApp.Models.ViewModels
 
 
         [Display(Name = "Email Address")]
-        [Required(ErrorMessage = "You need to type in a Email address.")]
+        [Required(ErrorMessage = "You need to type in a valid Email address.")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; } = null!;
 
